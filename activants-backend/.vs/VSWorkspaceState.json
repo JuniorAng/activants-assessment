@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\activants-backend",
+    "\\activants-backend\\Controllers",
+    "\\activants-backend\\DTO",
+    "\\activants-backend\\Entities"
+  ],
+  "SelectedNode": "\\activants-backend\\Entities\\DBContext.cs",
+  "PreviewInSolutionExplorer": false
+}

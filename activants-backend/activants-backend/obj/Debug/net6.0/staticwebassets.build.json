@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cBp6KKJJX7tOdPGuOnVtzgeXybNKDs1kqr8v+OYKIAc=",
+  "Source": "activants-backend",
+  "BasePath": "_content/activants-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
