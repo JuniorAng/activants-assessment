@@ -7,10 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: "AllowOrigin",
-        builder =>
+    options.AddPolicy("corspolicy",
+        build =>
         {
-            builder.WithOrigins("https://localhost:3000", "https://localhost:3001")
+            build.WithOrigins("http://localhost:3000")
                                 .AllowAnyHeader()
                                 .AllowAnyMethod();
         });
@@ -36,6 +36,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("corspolicy");
 
 app.UseHttpsRedirection();
 

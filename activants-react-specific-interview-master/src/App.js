@@ -90,7 +90,6 @@ export const App = () => {
 				bank: parseInt(sushis.bank) + parseInt(customer.amount),
 			});
 
-			alert("Sushi Wallet has been topup!");
 			const requestOptions = {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
@@ -103,7 +102,7 @@ export const App = () => {
 			fetch(custAPI, requestOptions)
 				.then((response) => response.json())
 				.then((data) => {
-					console.log(data);
+					alert("Sushi Wallet has been topup!");
 				});
 		}
 	};
